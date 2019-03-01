@@ -1,22 +1,14 @@
 import request from '../helpers/request'
 import { stringify } from 'querystring';
 
-// 游客注册，默认登录
-export function visitorRegister(params) {
-  return request(`/user/visitor/register?${stringify(params)}`)
+// 测试1
+export function login1(params) {
+  return request(`/xxx/xxx1?${stringify(params)}`)
 }
 
-//用户注册,即游客转用户
-export function userRegister(data) {
-  return request('/user/users/register', {
-    method: 'put',
-    body: data,
-  })
-}
-
-// 用户登录
-export function userLogin(data) {
-  return request(`/user/login`, {
+// 测试2
+export function login2(data) {
+  return request(`/xxx/xxx2`, {
     method: 'post',
     body: data,
   })

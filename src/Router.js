@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter, BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Bundle from './Bundle';
 
 

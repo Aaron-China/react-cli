@@ -1,17 +1,13 @@
 import { put, call, takeEvery } from 'redux-saga/effects'
-import { visitorRegister, userRegister, userLogin } from '../../services/user'
+import { login1, login2 } from '../../services/user'
 
 const sagas = {
   * visitorRegister({ payload, callback }) {
-    const result = yield call(visitorRegister, payload)
+    const result = yield call(login1, payload)
     if (callback) callback(result)
   },
   * userRegister({ payload, callback }) {
-    const result = yield call(userRegister, payload)
-    if (callback) callback(result)
-  },
-  * userLogin({ payload, callback }) {
-    const result = yield call(userLogin, payload)
+    const result = yield call(login2, payload)
     if (callback) callback(result)
   },
 

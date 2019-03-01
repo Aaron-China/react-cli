@@ -16,23 +16,10 @@ class User extends PureComponent {
   }
   fetch = () => {
     const params = {
-      origin: 'web-fei'
+      test: 'test'
     }
     this.props.dispatch({
       type: 'visitorRegister',
-      payload: params,
-      callback: result => {
-        console.log(result)
-      }
-    })
-  }
-  fetch2 = () => {
-    const params = {
-      // no: '2019228164118267747',
-      type: '0'
-    }
-    this.props.dispatch({
-      type: 'userLogin',
       payload: params,
       callback: result => {
         console.log(result)
